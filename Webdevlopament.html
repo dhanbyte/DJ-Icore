@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    
+       
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+    
+        <!-- Bootstrap core CSS -->
+        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Custom styles for this template -->
+        <link href="product.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Icoder-Heaven for Programmers</title>
+    <style>
+      .row{
+        margin-top: 5%;
+      }
+    </style>
+  </head>
+  <body 
+  data-new-gr-c-s-check-loaded="14.1129.0" data-gr-ext-installed="">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">icoder</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="./About.html"
+                id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Topics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./Technology.html">Technology</a>
+              <a class="dropdown-item" href="./Webdevlopament.html">Webdevlopament</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./contact.html">Support</a>
+              <a class="dropdown-item" href="./contact.html">Write for US</a>
+            </div>
+          </li>
+          
+          
+          <li class="nav-item active">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+      
+        
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</button>
+          <button class="btn btn-danger" data-toggle="modal" data-target="#SignUpModal">SignUp</button>
+        </div>
+      </div>
+    </nav>
+
+<!-- loginModal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="LoginModalLabel">Login to icoder</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="LoginInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="LoginInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="LoginInputPassword1">Password</label>
+            <input type="password" class="form-control" id="LoginInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="LoginCheck1">
+            <label class="form-check-label" for="LoginCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- loginModal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="SignUpModalLabel">SignUp to icoder</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="SignUpInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="SignUpInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="SignUpInputPassword1">Password</label>
+              <input type="password" class="form-control" id="SignUpInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="SignUpInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="SignUpInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="SignUpCheck1">
+              <label class="form-check-label" for="SignUpCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Creat Account</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- body Start -->
+    <main class="container py-5">
+      <h1>What is WebDevelopment ? </h1>
+
+    
+      <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+          <div class="card">
+          <img src="https://source.unsplash.com/414x200/? Developer" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Front-end Development</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 0px;">
+          <div class="card p-3">
+            <figure class="p-3 mb-0">
+              <blockquote class="blockquote">
+                <h4 class="card-title">Web- Devlapment</h4>
+          
+                <p>A well-known quote, contained in a blockquote element.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0 text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 0px;">
+          <div class="card">
+            <img src="https://source.unsplash.com/414x200/? Developer" alt="">
+        
+            <div class="card-body">
+              <h5 class="card-title">back-end Devlapment</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 171px;">
+          <div class="card text-bg-primary text-center p-3">
+            <figure class="mb-0">
+              <blockquote class="blockquote">
+                <h5 class="card-title">Full-Stack Devlapment</h5>
+          
+                <p>A well-known quote, contained in a blockquote element.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0 text-white">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Web Frameworks</h5>
+              <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 362px;">
+          <div class="card">
+        
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 378px;">
+          <div class="card p-3 text-end">
+            <figure class="mb-0">
+              <blockquote class="blockquote">
+                <h5 class="card-title">Version Control</h5>
+           
+                <p>A well-known quote, contained in a blockquote element.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0 text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    
+    </main>
+      
+      
+          <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      
+            <script async="" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+        
+      
+      <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div></body>
+
+    
+       
+    
+    
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <strong class="d-inline-block mb-2 text-primary">World</strong>
+                  <h3 class="mb-0">
+                    <a class="text-dark" href="#">Full-Stack Developer</a>
+                  </h3>
+                  <div class="mb-1 text-muted">Nov 12</div>
+                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#">Continue reading</a>
+                </div>
+                <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="https://source.unsplash.com/200x200/? code,Developer" data-holder-rendered="true">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <strong class="d-inline-block mb-2 text-success">Design</strong>
+                  <h3 class="mb-0">
+                    <a class="text-dark" href="#">Back-End Development</a>
+                  </h3>
+                  <div class="mb-1 text-muted">Nov 11</div>
+                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#">Continue reading</a>
+                </div>
+                <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="https://source.unsplash.com/200x200/? Developer" data-holder-rendered="true">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <main role="main" class="container">
+          <div class="row">
+            <div class="col-md-8 blog-main">
+              <h3 class="pb-3 mb-4 font-italic border-bottom">
+                Start About Webdevlopament
+              </h3>
+    
+              <div class="blog-post">
+                <h2 class="blog-post-title">What Is WebDevelopment?</h2>
+                <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+    
+                <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.
+
+                    Web development is closely related to the job of designing the features and functionality of apps (web design). The term development is usually reserved for the actual construction of these things (that is to say, the programming of sites).
+                    
+                    The basic tools involved in web development are programming languages called HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript. There are, however, a number of other programs used to “manage” or facilitate the construction of sites that would otherwise have to be done “from scratch” by writing code. A number of content management systems (CMS) fall into this category, including WordPress, Joomla!, Drupal, TYPO3, and Adobe Experience Manager, among others.</p>
+                <hr>
+                <h2>What Exactly is Web Development?</h2>
+                    <p>
+                        Web development is closely related to the job of designing the features and functionality of websites and apps (often called “web design”), but the “web development” term is usually reserved for the actual construction and programming of websites and apps.
+                        
+                        Think of all the web pages you have used over the years – Web Developers built those sites, making sure they functioned properly and performed in ways that allowed for a great user experience. Web Developers do this by writing lines of code, using a variety of programming languages, which vary depending on the tasks they are performing and the platforms they are working on.</p>
+                <ol>
+                  <li>Vestibulum id ligula porta felis euismod semper.</li>
+                  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                </ol>
+             </div><!-- /.blog-post -->
+    
+              <div class="blog-post">
+                <h2 class="blog-post-title">What Are the Most Common Programming Languages?</h2>
+                <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+    
+                <p>The most common programming languages involved in web development are:       </p>    
+                <ul>
+                    <li>
+                        HTML (Hypertext Markup Language)
+                  
+                      </li>
+                    <li>      CSS (Cascading Style Sheets)</li>
+                    <li>  JavaScript</li>
+                    </ul>
+            </div><!-- /.blog-post -->
+    
+            <div class="blog-post">
+                <h2 class="blog-post-title">Front-End Development Jobs</h2>
+                <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+                <p>Unlike back-end development, there are a number of job titles that cover different skill sets and experience levels within front-end development, including:
+
+                </p>
+                    <ul>
+                    <li>Front-End Developer</li>
+                    <li>Front-End Engineer</li>
+                    <li>CSS/HTML Web Developer</li>
+                    <li>Front-End Web Designer (this usually denotes a role that involves more visual and interaction design requirements)</li>
+                        <li>Front-End User Interface Developer (covering interaction design skills)</li>
+                <li>Mobile Front-End Web Developer</li>
+                <li>Front-End Accessibility Expert</li>
+                <li>Front-End Dev Ops</li>
+                    </ul>
+
+            </div><!-- /.blog-post -->
+           
+    
+            </div><!-- /.blog-main -->
+    
+            <aside class="col-md-4 blog-sidebar">
+              <div class="p-3 mb-3 bg-light rounded">
+                <h4 class="font-italic">About</h4>
+                <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              </div>
+    
+              <div class="p-3">
+                <h4 class="font-italic">Archives</h4>
+                <ol class="list-unstyled mb-0">
+                  <li><a href="#">March 2014</a></li>
+                  <li><a href="#">February 2014</a></li>
+                  <li><a href="#">January 2014</a></li>
+                  <li><a href="#">December 2013</a></li>
+                  <li><a href="#">November 2013</a></li>
+                  <li><a href="#">October 2013</a></li>
+                  <li><a href="#">September 2013</a></li>
+                  <li><a href="#">August 2013</a></li>
+                  <li><a href="#">July 2013</a></li>
+                  <li><a href="#">June 2013</a></li>
+                  <li><a href="#">May 2013</a></li>
+                  <li><a href="#">April 2013</a></li>
+                </ol>
+              </div>
+    
+              <div class="p-3">
+                <h4 class="font-italic">Elsewhere</h4>
+                <ol class="list-unstyled">
+                  <li><a href="https://www.instagram.com/p/Cw783lstV1L/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">instagram</a></li>
+                  <li><a href="https://www.instagram.com/p/Cw783lstV1L/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">Twitter</a></li>
+                  <li><a href="https://www.instagram.com/p/Cw783lstV1L/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">Facebook</a></li>
+                </ol>
+              </div>
+            </aside><!-- /.blog-sidebar -->
+    
+          </div><!-- /.row -->
+    
+        </main><!-- /.container -->
+    
+
+    
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/vendor/holder.min.js"></script>
+        <script>
+          Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+          });
+        </script>
+      
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="13" style="font-weight:bold;font-size:13pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg><iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div>
+      
+    
+    <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+          <!-- /END THE FEATURETTES -->
+          <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+            <p>Blog template built by <a href="https://getbootstrap.com/"></a>Dhananjay Singh<a href="https://gmail.com/mdo">@gmail.com</a>.</p>
+            <p class="mb-0">
+              <a href="#">Back to top</a>
+            </p>
+          </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
